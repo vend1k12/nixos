@@ -319,7 +319,7 @@
           }
           
           function countlines {
-            find . -name "*.${1:-*}" -type f -exec wc -l {} + | tail -1
+            find . -name "*.''${1:-*}" -type f -exec wc -l {} + | tail -1
           }
           
           function qr {
